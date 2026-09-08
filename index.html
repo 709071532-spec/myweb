@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 | 大學四年專案展示</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">YOUR NAME.</div>
+        <ul class="nav-links">
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#projects">專案成果</a></li>
+            <li><a href="#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主視覺區 (Hero Section) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>你好，我是 <span class="highlight">[你的名字]</span></h1>
+            <p>這是我的大學四年作品集，記錄了我的學習歷程與專案實作。</p>
+            <a href="#projects" class="btn">瀏覽專案</a>
+        </div>
+    </header>
+
+    <!-- 關於我 -->
+    <section id="about" class="section">
+        <h2>關於我 (About Me)</h2>
+        <div class="about-container">
+            <p>這裡填寫你的簡介。例如：畢業於 XX 大學 XX 學系，專長於網頁前端開發、UI/UX 設計以及資料分析。在大學四年中，我參與了多項跨領域專案，致力於利用技術解決實際問題。</p>
+        </div>
+    </section>
+
+    <!-- 專案展示區 -->
+    <section id="projects" class="section">
+        <h2>專案成果 (Projects)</h2>
+        
+        <!-- 年份篩選按鈕 -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="freshman">大一</button>
+            <button class="filter-btn" data-filter="sophomore">大二</button>
+            <button class="filter-btn" data-filter="junior">大三</button>
+            <button class="filter-btn" data-filter="senior">大四</button>
+        </div>
+
+        <!-- 卡片容器 -->
+        <div class="projects-grid">
+            
+            <!-- 大一專案 -->
+            <div class="project-card" data-category="freshman">
+                <img src="https://via.placeholder.com/400x250" alt="專案圖片">
+                <div class="project-info">
+                    <span class="tag">大一</span>
+                    <h3>C++ 基礎遊戲開發</h3>
+                    <p>利用主控台開發的文字冒險遊戲，奠定程式邏輯基礎。</p>
+                    <a href="#" target="_blank" class="project-link">查看詳情 &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 大二專案 -->
+            <div class="project-card" data-category="sophomore">
+                <img src="https://via.placeholder.com/400x250" alt="專案圖片">
+                <div class="project-info">
+                    <span class="tag">大二</span>
+                    <h3>UI/UX App 設計案</h3>
+                    <p>針對校園二手書交易進行使用者調研與 Figma Prototype 設計。</p>
+                    <a href="#" target="_blank" class="project-link">查看詳情 &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 大三專案 -->
+            <div class="project-card" data-category="junior">
+                <img src="https://via.placeholder.com/400x250" alt="專案圖片">
+                <div class="project-info">
+                    <span class="tag">大三</span>
+                    <h3>電商購物網站實作</h3>
+                    <p>使用 HTML/CSS/JS 開發前端，整合 API 實現購物車與結帳功能。</p>
+                    <a href="#" target="_blank" class="project-link">查看詳情 &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 大四專案 (畢業專題) -->
+            <div class="project-card" data-category="senior">
+                <img src="https://via.placeholder.com/400x250" alt="專案圖片">
+                <div class="project-info">
+                    <span class="tag">大四 (畢專)</span>
+                    <h3>智能 AI 社群分析系統</h3>
+                    <p>畢業專題作品，利用機器學習分析社群網路聲量與情緒。</p>
+                    <a href="#" target="_blank" class="project-link">查看詳情 &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 聯絡方式 -->
+    <section id="contact" class="section">
+        <h2>聯絡方式 (Contact)</h2>
+        <p>如果您對我的作品感興趣，歡迎隨時透過以下方式聯繫我！</p>
+        <div class="contact-links">
+            <a href="mailto:your.email@example.com" class="btn">Email 聯絡我</a>
+            <a href="https://github.com/your-github-id" target="_blank" class="btn outline">GitHub</a>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
