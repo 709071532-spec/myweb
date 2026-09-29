@@ -1,120 +1,128 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人作品集 | 大學四年專案展示</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- 引入 Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>剛出社會上班族的高性能電腦選購指南</title>
+    <link rel="stylesheet" href="456.css">
 </head>
 <body>
 
     <!-- 導覽列 -->
-    <nav class="navbar">
-        <div class="logo">YOUR NAME.</div>
-        <ul class="nav-links">
-            <li><a href="#about">關於我</a></li>
-            <li><a href="#projects">專案成果</a></li>
-            <li><a href="#contact">聯絡方式</a></li>
-        </ul>
-    </nav>
-
-    <!-- 主視覺區 (Hero Section) -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>你好，我是 <span class="highlight">[你的名字]</span></h1>
-            <p>這是我的大學四年作品集，記錄了我的學習歷程與專案實作。</p>
-            <a href="#projects" class="btn">瀏覽專案</a>
-        </div>
+    <header>
+        <nav>
+            <a href="#" class="logo">SmartPC 選購指南</a>
+            <ul>
+                <li><a href="#hero">首頁</a></li>
+                <li><a href="#products">精選電腦</a></li>
+                <li><a href="#shipping">配送說明</a></li>
+                <li><a href="#faq">常見問題</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- 關於我 -->
-    <section id="about" class="section">
-        <h2>關於我 (About Me)</h2>
-        <div class="about-container">
-            <p>這裡填寫你的簡介。例如：畢業於 XX 大學 XX 學系，專長於網頁前端開發、UI/UX 設計以及資料分析。在大學四年中，我參與了多項跨領域專案，致力於利用技術解決實際問題。</p>
-        </div>
-    </section>
+    <main>
+        <!-- 主視覺區塊 -->
+        <section id="hero" class="hero-section">
+            <h1>不用懂電腦規格，也能選到最適合你的高性能電腦</h1>
+            <p>專為剛出社會上班族打造，告別複雜專有名詞！告訴我們你的工作與娛樂需求，輕鬆挑選能用多年的高 CP 值電腦。</p>
+            <a href="#products" class="btn-primary">立即查看推薦電腦</a>
+        </section>
 
-    <!-- 專案展示區 -->
-    <section id="projects" class="section">
-        <h2>專案成果 (Projects)</h2>
-        
-        <!-- 年份篩選按鈕 -->
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">全部</button>
-            <button class="filter-btn" data-filter="freshman">大一</button>
-            <button class="filter-btn" data-filter="sophomore">大二</button>
-            <button class="filter-btn" data-filter="junior">大三</button>
-            <button class="filter-btn" data-filter="senior">大四</button>
-        </div>
+        <!-- 商品列表區塊 (至少 3 項商品) -->
+        <section id="products" class="products-section">
+            <h2>精選電腦推薦</h2>
+            <p class="section-desc">依據你的實際使用情境與租屋桌面空間，挑選最適合的配備：</p>
 
-        <!-- 卡片容器 -->
-        <div class="projects-grid">
-            
-            <!-- 大一專案 -->
-            <div class="project-card" data-category="freshman">
-                <img src="https://via.placeholder.com/400x250" alt="專案圖片">
-                <div class="project-info">
-                    <span class="tag">大一</span>
-                    <h3>C++ 基礎遊戲開發</h3>
-                    <p>利用主控台開發的文字冒險遊戲，奠定程式邏輯基礎。</p>
-                    <a href="#" target="_blank" class="project-link">查看詳情 &rarr;</a>
-                </div>
+            <div class="product-grid">
+                <!-- 商品 1 -->
+                <article class="product-card">
+                    <img src="images/aaa.jpg" alt="職場全能型主機照片" class="product-image">
+                    <h3>職場全能型 Pro</h3>
+                    <p class="product-scenario"><strong>適用情境：</strong>每天多開 30 個網頁分頁、同時處理大型 Excel 表格、順暢追劇與瀏覽高畫質影片不卡頓。</p>
+                    <ul class="product-details">
+                        <li><strong>規格亮點：</strong>高速 16GB 記憶體 / 512GB 快速固態硬碟</li>
+                        <li><strong>尺寸：</strong>寬 18 cm × 深 38 cm × 高 36 cm（適合小桌面）</li>
+                        <li><strong>配送：</strong>下單後 24 小時內出貨，全台免費宅配到府</li>
+                    </ul>
+                    <p class="product-price">NT$ 24,900</p>
+                    <a href="#shipping" class="btn-secondary">了解配送細節</a>
+                </article>
+
+                <!-- 商品 2 -->
+                <article class="product-card">
+                    <img src="images/pc-creator.jpg" alt="影音創作者型主機照片" class="product-image">
+                    <h3>影音創作者型 Studio</h3>
+                    <p class="product-scenario"><strong>適用情境：</strong>流暢剪輯 4K 影音短片、Photoshop 多圖修圖、支援雙螢幕輸出，滿足下班後的斜槓創作需求。</p>
+                    <ul class="product-details">
+                        <li><strong>規格亮點：</strong>效能級獨立顯卡 / 32GB 大容量記憶體 / 1TB 固態硬碟</li>
+                        <li><strong>尺寸：</strong>寬 21 cm × 深 42 cm × 高 45 cm</li>
+                        <li><strong>配送：</strong>專業防震包裝，全台免費宅配並提供專人安裝諮詢</li>
+                    </ul>
+                    <p class="product-price">NT$ 34,900</p>
+                    <a href="#shipping" class="btn-secondary">了解配送細節</a>
+                </article>
+
+                <!-- 商品 3 -->
+                <article class="product-card">
+                    <img src="images/pc-gaming.jpg" alt="極致效能電競型主機照片" class="product-image">
+                    <h3>極致效能型 Ultra</h3>
+                    <p class="product-scenario"><strong>適用情境：</strong>高畫質暢玩 3A 遊戲大作、跑 3D 渲染與 AI 模型算圖，提供未來 5 年都不必升級的頂級體驗。</p>
+                    <ul class="product-details">
+                        <li><strong>規格亮點：</strong>旗艦級獨立顯卡 / 高階多核心處理器 / 1TB 超高速硬碟</li>
+                        <li><strong>尺寸：</strong>寬 22 cm × 深 46 cm × 高 48 cm</li>
+                        <li><strong>配送：</strong>全台免費宅配到府，享 3 年原廠到府收送保固</li>
+                    </ul>
+                    <p class="product-price">NT$ 42,900</p>
+                    <a href="#shipping" class="btn-secondary">了解配送細節</a>
+                </article>
             </div>
+        </section>
 
-            <!-- 大二專案 -->
-            <div class="project-card" data-category="sophomore">
-                <img src="https://via.placeholder.com/400x250" alt="專案圖片">
-                <div class="project-info">
-                    <span class="tag">大二</span>
-                    <h3>UI/UX App 設計案</h3>
-                    <p>針對校園二手書交易進行使用者調研與 Figma Prototype 設計。</p>
-                    <a href="#" target="_blank" class="project-link">查看詳情 &rarr;</a>
-                </div>
+        <!-- 配送說明區塊 -->
+        <section id="shipping" class="shipping-section">
+            <h2>配送與售後服務說明</h2>
+            <div class="shipping-info">
+                <article class="shipping-item">
+                    <h3>運送方式與運費</h3>
+                    <p>全店商品皆享<strong>全台免費宅配到府</strong>服務，使用加強型防震緩衝包裝，確保電腦運送安全無虞。</p>
+                </article>
+                <article class="shipping-item">
+                    <h3>出貨時間</h3>
+                    <p>確認訂單後，將於 1 至 2 個工作天內完成檢測並出貨，出貨後約 1-2 天即可送達指定地址。</p>
+                </article>
+                <article class="shipping-item">
+                    <h3>保固與退換貨</h3>
+                    <p>全機提供 <strong>3 年硬體保固</strong> 與 7 天鑑賞期，保固期間內提供免費檢測與維修諮詢。</p>
+                </article>
             </div>
+        </section>
 
-            <!-- 大三專案 -->
-            <div class="project-card" data-category="junior">
-                <img src="https://via.placeholder.com/400x250" alt="專案圖片">
-                <div class="project-info">
-                    <span class="tag">大三</span>
-                    <h3>電商購物網站實作</h3>
-                    <p>使用 HTML/CSS/JS 開發前端，整合 API 實現購物車與結帳功能。</p>
-                    <a href="#" target="_blank" class="project-link">查看詳情 &rarr;</a>
-                </div>
+        <!-- FAQ 常見問題區塊 -->
+        <section id="faq" class="faq-section">
+            <h2>常見問題 FAQ</h2>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3>Q1: 完全不懂 CPU、RAM 這些規格，該怎麼選？</h3>
+                    <p>答：別擔心！您不需要背誦規格。請直接參考我們商品卡片上的「適用情境」，根據您平時的工作習慣與娛樂需求選擇即可。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Q2: 我的租屋處桌子很小，放得下這些電腦嗎？</h3>
+                    <p>答：每個商品頁面皆有標示精確的「長、寬、高尺寸」。建議購買前使用捲尺量測您的書桌空間，小空間推薦選擇「職場全能型 Pro」。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Q3: 買這台電腦可以用多久？之後需要自己升級嗎？</h3>
+                    <p>答：我們推薦的規格皆具備良好的擴充性與效能餘裕，正常使用下至少可順暢運作 3 至 5 年，不需要頻繁更換零件。</p>
+                </article>
             </div>
+        </section>
+    </main>
 
-            <!-- 大四專案 (畢業專題) -->
-            <div class="project-card" data-category="senior">
-                <img src="https://via.placeholder.com/400x250" alt="專案圖片">
-                <div class="project-info">
-                    <span class="tag">大四 (畢專)</span>
-                    <h3>智能 AI 社群分析系統</h3>
-                    <p>畢業專題作品，利用機器學習分析社群網路聲量與情緒。</p>
-                    <a href="#" target="_blank" class="project-link">查看詳情 &rarr;</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- 聯絡方式 -->
-    <section id="contact" class="section">
-        <h2>聯絡方式 (Contact)</h2>
-        <p>如果您對我的作品感興趣，歡迎隨時透過以下方式聯繫我！</p>
-        <div class="contact-links">
-            <a href="mailto:your.email@example.com" class="btn">Email 聯絡我</a>
-            <a href="https://github.com/your-github-id" target="_blank" class="btn outline">GitHub</a>
-        </div>
-    </section>
-
-    <!-- 頁尾 -->
+    <!-- 頁尾與教學用途聲明 -->
     <footer>
-        <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2026 SmartPC 高性能電腦選購指南. All rights reserved.</p>
+        <p class="disclaimer">聲明：本網站內容、人物、預算與需求皆為教學假設，僅供網頁設計與 AI 協作學習使用。</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

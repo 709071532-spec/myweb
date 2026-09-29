@@ -1,0 +1,322 @@
+/* ==========================================
+   1. 重置與基礎設定 (Reset & Base)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+}
+
+/* 鍵盤焦點必須可見 (無障礙設計) */
+a:focus,
+button:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   2. 導覽列 (Header & Navigation)
+   ========================================== */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap; /* 允許導覽換行 */
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* 允許選單項目換行 */
+    list-style: none;
+    gap: 1.25rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* ==========================================
+   3. 主視覺區塊 (Hero Section)
+   ========================================== */
+.hero-section {
+    background: linear-gradient(135deg, #0056b3 0%, #003366 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e68a00;
+}
+
+/* ==========================================
+   4. 通用 Section 佈局與標題
+   ========================================== */
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.section-desc {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 2.5rem;
+}
+
+/* ==========================================
+   5. 商品區塊 (Product Section)
+   ========================================== */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 手機預設：1 欄 (390px) */
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* 圖片固定比例 (Aspect Ratio) */
+.product-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+    background-color: #e5e7eb;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.product-scenario {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    background-color: #f0f7ff;
+    padding: 0.75rem;
+    border-radius: 6px;
+}
+
+.product-details {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.product-details li {
+    margin-bottom: 0.4rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d97706;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.btn-secondary {
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    color: #0056b3;
+    border: 1.5px solid #0056b3;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* ==========================================
+   6. 配送說明區塊 (Shipping Section)
+   ========================================== */
+.shipping-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.shipping-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.shipping-item {
+    border-left: 4px solid #0056b3;
+    padding-left: 1rem;
+}
+
+.shipping-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: #1f2937;
+}
+
+.shipping-item p {
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+/* ==========================================
+   7. 常見問題區塊 (FAQ Section)
+   ========================================== */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.faq-item h3 {
+    font-size: 1.05rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+/* ==========================================
+   8. 頁尾 (Footer)
+   ========================================== */
+footer {
+    background-color: #1f2937;
+    color: #9ca3af;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.disclaimer {
+    color: #6b7280;
+    font-size: 0.8rem;
+}
+
+/* ==========================================
+   9. 響應式斷點設定 (Media Queries)
+   ========================================== */
+
+/* 平板尺寸 (768px 以上) */
+@media (min-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 欄排列 */
+    }
+
+    .shipping-info {
+        grid-template-columns: repeat(3, 1fr); /* 3 欄並排 */
+    }
+}
+
+/* 桌面大螢幕尺寸 (1440px 以上) */
+@media (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 欄並排 */
+    }
+
+    .hero-section {
+        padding: 6rem 1.5rem;
+    }
+}
